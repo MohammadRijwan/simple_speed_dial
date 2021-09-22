@@ -16,7 +16,7 @@ class SpeedDialChild {
 
   final Color? backgroundColor;
 
-  final String? label;
+  final Widget? label;
 
   final Function? onPressed;
 

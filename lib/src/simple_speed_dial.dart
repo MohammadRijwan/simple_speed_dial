@@ -113,22 +113,7 @@ class _SpeedDialState extends State<SpeedDial> with SingleTickerProviderStateMix
                         children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.only(right: 16.0 - 4.0),
-                            child: Card(
-                              elevation: 6.0,
-                              color: Colors.white,
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                  left: 16.0,
-                                  right: 16.0,
-                                  top: 8.0,
-                                  bottom: 8.0,
-                                ),
-                                child: Text(
-                                  speedDialChild.label!,
-                                  style: widget.labelsStyle,
-                                ),
-                              ),
-                            ),
+                            child: speedDialChild.label!,
                           ),
                           ScaleTransition(
                             scale: _speedDialChildAnimations[speedDialChildAnimationIndex],
